@@ -2,6 +2,8 @@ data "aws_availability_zones" "available" {
   state = "available"  # Fetch only available zones
 }
 
+#creating VPC
+
 resource "aws_vpc" "this" {
   cidr_block       = var.vpc_cidr
   instance_tenancy = "default"
@@ -9,6 +11,7 @@ resource "aws_vpc" "this" {
   tags = var.vpc_tags
 }
 
+#creating Internet gateway
 resource "aws_internet_gateway" "gw" {
   vpc_id = aws_vpc.this.id
 
