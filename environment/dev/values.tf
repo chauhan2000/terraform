@@ -1,6 +1,6 @@
 locals {
   project_name     = "TerraCopter"
-  aws_region       = "us-east-1"
+  aws_region       = "ap-south-1"
   vpc_cidr         = "172.7.0.0/16"
   vpc_name         = "TerraCopter-dev-vpc"
   environment      = "dev"
