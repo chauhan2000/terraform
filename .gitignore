@@ -1,0 +1,5 @@
+environment/dev/.terraform
+.git
+environment/dev/.terraform/*
+.terraform.lock.hcl
+environment/dev/.terraform.lock.hcl
